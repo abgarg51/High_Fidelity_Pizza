@@ -1,16 +1,20 @@
-(function(){
-    function change(entityID) {
-        Entities.editEntity(entityID, { angularDamping: 0});
-        Entities.editEntity(entityID, { angularVelocity: { x: 0, y: 60, z: 0} });
-        Entities.editEntity(entityID, { color: { red: 255, green: 100, blue: 220} });
+//
+//  changeColorOnCollision.js
+//  examples/entityScripts
+//
+//  Created by Brad Hefta-Gaub on 12/8/14.
+//  Copyright 2014 High Fidelity, Inc.
+//
+//  Distributed under the Apache License, Version 2.0.
+//  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
+//
+
+(function(){ 
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    this.enterEntity = function(entityID) {
-        print("enterEntity("+entityID.id+")");
-        change(entityID);
-    };
-    this.leaveEntity = function(entityID) {
-        print("leaveEntity("+entityID.id+")");
-        Entities.editEntity(entityID, { angularDamping: 0.5});
-        Entities.editEntity(entityID, { color: { red: 255, green: 190, blue: 20} });
-    };
+
+    this.collisionWithEntity = function(myID, otherID, collisionInfo) { 
+        Entities.editEntity(myID, { color: { red: getRandomInt(128,255), green: getRandomInt(128,255), blue: getRandomInt(128,255)} });
+    }; 
 })
