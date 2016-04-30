@@ -1,12 +1,16 @@
-
-(function(){ 
-    function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+(function(){
+    function change(entityID) {
+        Entities.editEntity(entityID, { angularDamping: 0});
+        Entities.editEntity(entityID, { angularVelocity: { x: 0, y: 60, z: 0} });
+        Entities.editEntity(entityID, { color: { red: 255, green: 100, blue: 220} });
     }
-
-    this.collisionWithEntity = function(myID, otherID, collisionInfo) { 
-        Entities.editEntity(myID, { color: { red: getRandomInt(128,255), 
-                                            green: getRandomInt(128,255), 
-                                            blue: getRandomInt(128,255)} });
-    }; 
+    this.enterEntity = function(entityID) {
+        print("enterEntity("+entityID.id+")");
+        change(entityID);
+    };
+    this.leaveEntity = function(entityID) {
+        print("leaveEntity("+entityID.id+")");
+        Entities.editEntity(entityID, { angularDamping: 0.5});
+        Entities.editEntity(entityID, { color: { red: 255, green: 190, blue: 20} });
+    };
 })
