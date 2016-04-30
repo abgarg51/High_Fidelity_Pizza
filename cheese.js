@@ -19,9 +19,12 @@
         Entities.editEntity(myID, { color: { red: getRandomInt(128,255), green: getRandomInt(128,255), blue: getRandomInt(128,255)} });
     }; 
 })
+<<<<<<< Updated upstream
 
 Console.log("hello world");
 print("hello world");
 
 
 Script.stop();
+=======
+>>>>>>> Stashed changes
