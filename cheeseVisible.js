@@ -10,4 +10,4 @@
     
         Entities.editEntity(entityID, newProperties);
     };
-}
+})
