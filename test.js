@@ -1,12 +1,12 @@
 print("started");
 (function() {
 
-    this.clickDownOnEntity = function(entityID, mouseEvent) {
-        print("clicked4");
-        var myProps = Entities.getEntityProperties(entityID);
+    this.collisionWithEntity = function(myID, otherID, collisionInfo) {
+        print("collision");
+        var myProps = Entities.getEntityProperties(myID);
         var pizzaPosition = Vec3.sum(myProps.position,{
             x:0,
-            y:1,
+            y:.2,
             z:0,
         })
 
