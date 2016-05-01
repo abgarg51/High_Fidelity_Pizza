@@ -24,3 +24,5 @@
         }   
         Entities.editEntity(entityID, { color: { red: red, green: 0, blue: blue} });
     };  
+
+});
