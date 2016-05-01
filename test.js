@@ -7,7 +7,7 @@ print("started");
         var pos = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
         var properties = {
             type: "Model",
-            modelURL : "https://rawgit.com/abgarg51/High_Fidelity_Pizza/v0/Pizza.fbx",
+            modelURL : "https://www.dropbox.com/s/612pgw8woehz5e8/Pizza.fbx?dl=0",
             position: pos,
             name: "new_pizza"
         };
