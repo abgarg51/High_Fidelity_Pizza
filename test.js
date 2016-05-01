@@ -2,7 +2,7 @@ print("started");
 (function() {
     var properties = {
             type: "Model",
-            modelURL : "C:\HighFidelityHackathon\High_Fidelity_Pizza\Pizza.fbx",
+            modelURL : "https://rawgit.com/abgarg51/High_Fidelity_Pizza/v0/Pizza.fbx",
             position: pos,
             name: "new_pizza"
         };
