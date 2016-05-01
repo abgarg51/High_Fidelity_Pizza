@@ -2,7 +2,7 @@ print("started");
 (function() {
     var properties = {
             type: "Model",
-            modelURL : "https://www.dropbox.com/s/612pgw8woehz5e8/Pizza.fbx?dl=0",
+            modelURL : "atp:/pizza/Pizza.fbx",
             position: pos,
             name: "new_pizza"
         };
