@@ -8,7 +8,7 @@ print("started");
         print("name: "+otherProps["name"]);
         var pizzaPosition = Vec3.sum(myProps.position,{
             x:0,
-            y:.2,
+            y:0,
             z:0,
         })
 
@@ -21,8 +21,11 @@ print("started");
         };
 
         // Add the sphere
-        if (otherProps["name"] === "pizza-base-no-texture")
+        if (otherProps["name"] === "cheese"){
             var Ent = Entities.addEntity(properties);
+            Entities.removeEntity(myID);
+            Entities.removeEntity(otherID);
+        }
     };
 
 });   
