@@ -24,6 +24,18 @@ print("started");
                 z: 0.3549
             },
             shapeType: 'compound',
+            gravity: {
+                x: 0,
+                y: -1,
+                z: 0
+            },
+            dynamic: true,
+            shapeType: "box",
+            userData: JSON.stringify({
+                grabbableKey: {
+                    grabbable: true
+                }
+            })
         };
 
 
@@ -48,10 +60,6 @@ print("started");
             });
             print("moved items");
         }
-    }; 
-    // this.mousePressOnEntity = function(entityID, mouseEvent) { 
-    //     print("registered click on object");
-    //     Entities.editEntity(entityID, { position: table_position});
-    // };
+    };
 
 });
