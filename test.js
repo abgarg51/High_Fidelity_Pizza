@@ -21,7 +21,7 @@ print("started");
         };
 
         // Add the sphere
-        if (otherProps["name"] == "pizza-base")
+        if (otherProps["name"] == "pizza-base-no-texture")
             var Ent = Entities.addEntity(properties);
     };
 
