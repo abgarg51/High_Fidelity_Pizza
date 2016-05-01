@@ -25,5 +25,4 @@ print("started");
             var Ent = Entities.addEntity(properties);
     };
 
-}); 
- 
+});   
