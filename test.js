@@ -6,7 +6,7 @@ print("started");
             position: pos,
             name: "new_pizza"
         };
-    this.mousePressOnEntity = function(entityID, mouseEvent) {
+    this.clickDownOnEntity = function(entityID, mouseEvent) {
         print("clicked3");
 
         // Create the sphere properties
