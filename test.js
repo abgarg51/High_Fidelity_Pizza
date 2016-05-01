@@ -7,7 +7,7 @@ print("started");
             name: "new_pizza"
         };
     this.mousePressOnEntity = function(entityID, mouseEvent) {
-        print("clicked2");
+        print("clicked3");
 
         // Create the sphere properties
         var pos = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
