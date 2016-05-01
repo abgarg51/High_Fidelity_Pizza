@@ -5,6 +5,6 @@
     };
     this.mouseReleaseOnEntity = function(entityID, mouseEvent) { 
     
-        Entities.editEntity(entityID, {visible: TRUE}});
+        Entities.editEntity(entityID, {visible: TRUE});
     };
 });
