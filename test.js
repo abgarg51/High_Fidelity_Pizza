@@ -4,7 +4,7 @@ print("started");
     this.collisionWithEntity = function(myID, otherID, collisionInfo) {
         print("collision");
         var myProps = Entities.getEntityProperties(myID);
-        print(myProps);
+        print(myProps["type"]);
         var pizzaPosition = Vec3.sum(myProps.position,{
             x:0,
             y:.2,
