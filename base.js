@@ -22,9 +22,10 @@ print("started");
 
         // Add the sphere
         if (otherProps["name"] === "cheese"){
-            var Ent = Entities.addEntity(properties);
+            //var Ent = Entities.addEntity(properties);
+            print("should delete");
             Entities.deleteEntity(otherID);
-            Entities.deleteEntity(myID);
+            //Entities.deleteEntity(myID);
         }
     };
 
