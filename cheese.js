@@ -1,26 +1,20 @@
-(function(){
-    var change = 12;
-    var red = 100;
-  var blue = 100;
-    this.mousePressOnEntity = function(entityID, mouseEvent) { 
-        red = red - change;
-        blue = blue + change;
-        if (blue >=  255) {
-            blue = 255;
-        }
-        if (red <=  0) {
-            red = 0;
-        }
-        Entities.editEntity(entityID, { color: { red: red, green: 0, blue: blue} });
-    };
-    this.mouseReleaseOnEntity = function(entityID, mouseEvent) { 
-    red = red + change;
-      blue = blue - change;
-        if (red >=  255) {
-            red = 255;
-        }
-        if (blue <=  0) {
-            blue = 0;
-        }   
-        Entities.editEntity(entityID, { color: { red: red, green: 0, blue: blue} });
-    };  
+//
+//  changeColorOnCollision.js
+//  examples/entityScripts
+//
+//  Created by Brad Hefta-Gaub on 12/8/14.
+//  Copyright 2014 High Fidelity, Inc.
+//
+//  Distributed under the Apache License, Version 2.0.
+//  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
+//
+
+(function(){ 
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    this.collisionWithEntity = function(myID, otherID, collisionInfo) { 
+        Entities.editEntity(myID, { color: { red: getRandomInt(128,255), green: getRandomInt(128,255), blue: getRandomInt(128,255)} });
+    }; 
+})
