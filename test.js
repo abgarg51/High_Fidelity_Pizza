@@ -2,7 +2,7 @@ print("started");
 (function() {
 
     this.clickDownOnEntity = function(entityID, mouseEvent) {
-        print("clicked3");
+        print("clicked4");
         var myProps = Entities.getEntityProperties(entityID);
         var pizzaPosition = Vec3.sum(myProps.position,{
             x:0,
@@ -10,14 +10,12 @@ print("started");
             z:0,
         })
 
-        // Create the sphere properties
-        var pos = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
-
             var properties = {
             type: "Model",
             modelURL : "atp:/pizza/Pizza.fbx",
             position: pizzaPosition,
-            name: "new_pizza"
+            name: "new_pizza",
+            dimensions:{x:0.3549,y:0.0325,z:0.3549}
         };
 
         // Add the sphere
