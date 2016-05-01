@@ -2,7 +2,7 @@ print("started");
 (function() {
     var properties = {
             type: "Model",
-            modelURL : "C:\HighFidelityHackathon\High_Fidelity_Pizza",
+            modelURL : "C:\HighFidelityHackathon\High_Fidelity_Pizza\Pizza.fbx",
             position: pos,
             name: "new_pizza"
         };
