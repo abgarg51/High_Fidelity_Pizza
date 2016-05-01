@@ -17,8 +17,7 @@ print("started");
             type: "Model",
             modelURL : "atp:/pizza/Pizza.fbx",
             position: pizzaPosition,
-            name: "new_pizza",
-            dimensions:{x:0.3549,y:0.0325,z:0.3549}
+            name: "new_pizza"
         };
 
         // Add the sphere
