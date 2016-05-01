@@ -4,7 +4,8 @@ print("started");
     this.collisionWithEntity = function(myID, otherID, collisionInfo) {
         print("collision");
         var myProps = Entities.getEntityProperties(myID);
-        print(myProps["type"]);
+        var otherProps = Entities.getEntityProperties(otherID);
+        print(otherProps["name"]);
         var pizzaPosition = Vec3.sum(myProps.position,{
             x:0,
             y:.2,
@@ -20,7 +21,8 @@ print("started");
         };
 
         // Add the sphere
-        var Ent = Entities.addEntity(properties);
+        if (otherProps["name"] == "pizza_base")
+            var Ent = Entities.addEntity(properties);
     };
 
 }); 
