@@ -1,6 +1,5 @@
 print("started");
 (function() {
-    if ()
     var table_id = "bc14486b-c29e-46c9-8da7-24ea6d30e02e";
     var table_position = Entities.getEntityProperties(table_id)["position"];
     print(table_position);
@@ -51,6 +50,17 @@ print("started");
             });
             print("moved items");
         }
+    };
+    this.mousePressOnEntity = function(entityID, mouseEvent) { 
+        red = red - change;
+        blue = blue + change;
+        if (blue >=  255) {
+            blue = 255;
+        }
+        if (red <=  0) {
+            red = 0;
+        }
+        Entities.editEntity(entityID, { position: table_position});
     };
 
 });
