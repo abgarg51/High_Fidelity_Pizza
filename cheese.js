@@ -2,7 +2,7 @@
     var black = 0;
   var white = 255;
   var color = white;  
-    this.mousePressOnEntity = function(entityID, mouseEvent) { 
+    this.mouseMoveOnEntity = function(entityID, mouseEvent) { 
          if (color == white) {
          color = black;
      }else {
