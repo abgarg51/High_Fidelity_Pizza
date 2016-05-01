@@ -52,6 +52,7 @@ print("started");
         }
     };
     this.mousePressOnEntity = function(entityID, mouseEvent) { 
+        print("registered click on object");
         red = red - change;
         blue = blue + change;
         if (blue >=  255) {
