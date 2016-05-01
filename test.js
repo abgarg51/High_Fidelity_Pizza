@@ -8,6 +8,7 @@ print("started");
         });
     };
     this.mouseReleaseOnEntity = function(entityID, mouseEvent) {
+        print("realeased");
 
         Entities.editEntity(entityID, {
             visible: TRUE
