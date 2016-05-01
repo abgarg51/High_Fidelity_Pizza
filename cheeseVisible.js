@@ -1,16 +1,10 @@
 (function(){
-    var newProperties = {
-      visible: FALSE
-    };
-    var newProperties2 = {
-      visible: TRUE
-    };
     this.mousePressOnEntity = function(entityID, mouseEvent) { 
         
-        Entities.editEntity(entityID, newProperties);
+        Entities.editEntity(entityID, {visible: FALSE});
     };
     this.mouseReleaseOnEntity = function(entityID, mouseEvent) { 
     
-        Entities.editEntity(entityID, newProperties2);
+        Entities.editEntity(entityID, {visible: TRUE}});
     };
 })
