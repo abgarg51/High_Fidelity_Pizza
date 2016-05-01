@@ -3,6 +3,7 @@
     var red = 100;
   var blue = 100;
     this.mousePressOnEntity = function(entityID, mouseEvent) { 
+        print("Clicked");
         red = red - change;
         blue = blue + change;
         if (blue >=  255) {
