@@ -50,7 +50,7 @@ print("started");
             });
             print("moved items");
         }
-    };
+    }; 
     // this.mousePressOnEntity = function(entityID, mouseEvent) { 
     //     print("registered click on object");
     //     Entities.editEntity(entityID, { position: table_position});
