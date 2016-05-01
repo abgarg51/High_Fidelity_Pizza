@@ -5,7 +5,7 @@ print("started");
         print("collision");
         var myProps = Entities.getEntityProperties(myID);
         var otherProps = Entities.getEntityProperties(otherID);
-        print(otherProps["name"]);
+        print("name: "+otherProps["name"]);
         var pizzaPosition = Vec3.sum(myProps.position,{
             x:0,
             y:.2,
