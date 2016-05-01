@@ -4,13 +4,12 @@ print("started");
     var table_position = Entities.getEntityProperties(table_id)["position"];
     print(table_position);
     this.collisionWithEntity = function(myID, otherID, collisionInfo) {
-        print("collision");
         var myProps = Entities.getEntityProperties(myID);
         var otherProps = Entities.getEntityProperties(otherID);
         print("name: " + otherProps["name"]);
         var pizzaPosition = Vec3.sum(table_position, {
             x: 0,
-            y: 0.83,
+            y: .6,
             z: 0,
         })
 
@@ -32,20 +31,19 @@ print("started");
         // Add the sphere
         if (otherProps["name"] === "cheese") {
             var pizza_ent = Entities.addEntity(new_pizza_properties);
-            var cheese_ent = Entities.addEntity(new_cheese_properties);
             print("moving items");
             Entities.editEntity(myID, {
                 position: Vec3.sum(pizzaPosition, {
-                    x: 0,
+                    x: -.7,
                     y: 0,
                     z: -1,
                 })
             });
             Entities.editEntity(otherID, {
                 position: Vec3.sum(pizzaPosition, {
-                    x: 0,
+                    x: .5,
                     y: 0,
-                    z: 1,
+                    z: .7,
                 })
             });
             print("moved items");
