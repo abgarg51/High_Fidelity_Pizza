@@ -42,9 +42,6 @@ print("started");
 
         // Add the sphere
         if (otherProps["name"] === "cheese") {
-            var pizza_ent = Entities.addEntity(new_pizza_properties);
-            print("moving items");
-            
             Entities.editEntity(myID, {
                 position: Vec3.sum(pizzaPosition, {
                     x: -.7,
@@ -74,6 +71,7 @@ print("started");
                     z: 0,
                 }
             });
+            var pizza_ent = Entities.addEntity(new_pizza_properties);
         }
     };
 
