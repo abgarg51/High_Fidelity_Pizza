@@ -6,7 +6,7 @@ print("started");
         // Create the sphere properties
         var pos = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
         var properties = {
-            type: "Sphere",
+            modelURL : "atp:/pizza/Pizza.fbx",
             position: pos
         };
 
