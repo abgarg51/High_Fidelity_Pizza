@@ -42,6 +42,48 @@ print("started");
 
         // Add the sphere
         if (otherProps["name"] === "cheese") {
+            Entities.editEntity(otherID, {
+                acceleration : {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            });
+            Entities.editEntity(myID, {
+                acceleration : {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            }); 
+            Entities.editEntity(myID, {
+                angularVelocity: {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            });
+            Entities.editEntity(otherID, {
+                angularVelocity: {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            });
+            Entities.editEntity(myID, {
+                velocity: {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            });
+            Entities.editEntity(otherID, {
+                velocity: {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            });
             Entities.editEntity(myID, {
                 position: Vec3.sum(pizzaPosition, {
                     x: -.7,
@@ -57,6 +99,35 @@ print("started");
                     z: .7,
                 })
             });
+
+                        Entities.editEntity(otherID, {
+                acceleration : {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            });
+            Entities.editEntity(myID, {
+                acceleration : {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            }); 
+            Entities.editEntity(myID, {
+                angularVelocity: {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            });
+            Entities.editEntity(otherID, {
+                angularVelocity: {
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                }
+            });
             Entities.editEntity(myID, {
                 velocity: {
                     x: 0,
@@ -71,7 +142,10 @@ print("started");
                     z: 0,
                 }
             });
+
+
             var pizza_ent = Entities.addEntity(new_pizza_properties);
+
         }
     };
 
